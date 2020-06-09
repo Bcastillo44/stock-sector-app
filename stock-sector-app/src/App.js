@@ -41,7 +41,7 @@ render(){
 
   // console.log(this.state)
 
-  // let {sectors} = this.state;
+  let {sectors} = this.state;
 
   return (
     
@@ -56,7 +56,7 @@ render(){
         <br />
       </Router>
 
-      {/* <h3>Energy Sector</h3>
+      <h3>Energy Sector</h3>
       
         {sectors.map(sector => (
           <p key={sector.id}>
@@ -152,7 +152,7 @@ render(){
       {sector.title} : {sector.sectors[0].Utilities}%
         </p>
       ))}
-  <br></br> */}
+  <br></br>
      
 
     </div>
