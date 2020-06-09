@@ -13,7 +13,7 @@ No installation needed if individual has a web browser. Launch below URL.
 
 ***
 
-## Need Advice? You've come to the right place!
+## Want to Know How the Stock Sectors Are Doing? Check out the App!
 
 Click on individual sector to see sector information. Submit form to change information within each sector.
 
