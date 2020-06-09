@@ -6,11 +6,11 @@
 	
 }
 
-h1{
+h3{
 
-  font-size: 40px;
+  font-size: 25px;
   font-family: sans-serif;
-  margin: 50px;
+  margin: 20px;
   border: 1px solid grey;
   box-shadow: 5px 10px 10px #a6a6a6;
   background: white;
@@ -20,12 +20,12 @@ h1{
     
 }
 
-h2{
+p{
 
-  font-size: 40px;
-  margin: 50px;
-  border: 1px solid grey;
-  background: white;
- 
-    
+  font-size: 17px;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  
+   
 }
