@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
-import { Route, Link } from "react-router-dom";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import Sector from "./Sector";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./App.css";
+
+import Navbar from "./components/navbar.component";
+import SectorList from "./components/sector-list.component";
+import EditSector from "./components/edit-sector.component";
+import CreateSector from "./components/create-sector.component";
+import DeleteSector from "./components/delete-sector.component";
 
 class App extends Component {
 
@@ -36,13 +41,22 @@ render(){
 
   // console.log(this.state)
 
-  let {sectors} = this.state;
+  // let {sectors} = this.state;
 
   return (
     
     <div className="container">
 
-      <h3>Energy Sector</h3>
+      <Router>
+        <Navbar />
+        <Route path="/" exact component = {SectorList} />
+        <Route path="/sector/:id" component = {EditSector} />
+        <Route path="/sector" component = {CreateSector} />
+        <Route path="/sector/:id" component = {DeleteSector} />
+        <br />
+      </Router>
+
+      {/* <h3>Energy Sector</h3>
       
         {sectors.map(sector => (
           <p key={sector.id}>
@@ -138,7 +152,7 @@ render(){
       {sector.title} : {sector.sectors[0].Utilities}%
         </p>
       ))}
-  <br></br>
+  <br></br> */}
      
 
     </div>
